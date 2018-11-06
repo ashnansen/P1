@@ -1,1 +1,25 @@
+const int rightValue = A1;
+const int leftValue = A0;
 
+int leftRead = 0; //left line sensor
+int rightRead = 0; //right line sensor
+
+
+void setup() {
+Serial.begin(9600);
+pinMode(rightValue, INPUT); //right line sensor
+pinMode(leftValue, INPUT); //left line sensor
+
+}
+
+void loop() {
+
+leftRead = analogRead(leftValue); //assign reading from left sensor to the varible leftRead
+rightRead = analogRead(rightValue); //assign reading from right sensor to the varible rightRead
+
+Serial.print(rightRead); //print the values from linesensor
+Serial.print(" ");
+Serial.print(leftRead);
+Serial.println(" ");
+
+}
