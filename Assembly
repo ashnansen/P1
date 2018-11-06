@@ -1,27 +1,43 @@
 // defines pins numbers
 
+/* all pins need to be mapped in the code the VVC and GND needs to be commented out. 
+This is so it is easy to find the correct value for VCC */ 
+
+
+// Remote control arduino
+
+
 
 // The ultrasound sensor
 
 const int trigPin = 9; 
 const int echoPin = 10;
-
-
-// The Line sensor
-
-// The Left wheel 
-
-// The Right wheel
-
-
+// VVC 5v 
 
 // defines variables
 
-// The ultrasound sensor
-
 long duration;
 int distance;
+
+// The Line sensor
+
+
+
+// The wheels 
+
+
+
+
 void setup() {
+
+
+// Remote control
+
+
+
+// The ultrasound sensor
+
+
   pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
   pinMode(echoPin, INPUT); // Sets the echoPin as an Input
   Serial.begin(9600); // Starts the serial communication
@@ -31,16 +47,19 @@ void setup() {
 
 
 
-// The Left wheel 
+// The wheels 
 
 
-
-// The Right wheel
 
 
 }
 
 void loop() {
+
+// There is needet a start up sequence
+
+
+
 
 // The ultrasound sensor
 
